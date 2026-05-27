@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfa Depsiyana Putri | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        nav{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo{
+            font-size: 28px;
+            font-weight: 700;
+            color: #7c3aed;
+        }
+
+        .hero{
+            height: 100vh;
+            background: linear-gradient(to right, #7c3aed, #a855f7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1{
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: white;
+            color: #7c3aed;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover{
+            transform: translateY(-3px);
+        }
+
+        section{
+            padding: 100px 10%;
+        }
+
+        .section-title{
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #7c3aed;
+        }
+
+        .about{
+            background: white;
+        }
+
+        .grid-about{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about-text{
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            font-size: 18px;
+        }
+
+        .achievements{
+            background: #f5f7fa;
+        }
+
+        .timeline{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .timeline-item{
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .timeline-item:hover{
+            transform: translateY(-5px);
+        }
+
+        .timeline-content h3{
+            color: #7c3aed;
+            margin-bottom: 10px;
+        }
+
+        .gallery{
+            background: white;
+            text-align: center;
+        }
+
+        .gallery img{
+            width: 300px;
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact{
+            background: linear-gradient(to right, #7c3aed, #9333ea);
+            color: white;
+        }
+
+        .contact-box{
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-box h2{
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            color: white;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size: 38px;
+            }
+
+            .section-title{
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><span>.</span></div>
+            <ul>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selfa Depsiyana Putri</h1>
+            <a href="#about" class="btn-primary">Kenali Lebih Jauh</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+
+            <div class="grid-about">
+                <div class="about-text">
+                    <p>
+                        Halo, saya <strong>Selfa Depsiyana Putri</strong> 
+                        halo nama saya Selfa Depsiyana Putri.saya siwa kelas 10 
+                        yang memiliki minat di bidang web desain dan coding
+                    </p>
+                </div>
+
+                <div class="skills-box">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Prestasi</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Juara 1 coding</h3>
+
+                        <p>
+                            Penghargaan atas inovasi desain konsep UI/UX 
+                            untuk solusi keberlanjutan lingkungan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri Kegiatan</h2>
+
+            <img src="JPEG.file" alt="Galeri Kegiatan">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="contact-box">
+                <h2>KONTAK</h2>
+
+                <p>Nomor : 088267459832</p>
+
+                <div class="contact-details">
+                    <p><strong>Email:</strong> Instagram : Selfaa</p>
+
+                    <p><strong>Lokasi:</strong> Sekolah : SMKN 1 GEDONG TATAAN</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Selfa Depsiyana Putri | Portfolio</p>
+        </div>
+    </footer>
+
+</body>
+</html>
